@@ -1,0 +1,552 @@
+@charset "utf-8";
+
+
+
+
+ body {
+	background:#333;
+	font-family: sans-serif, Tahoma, Geneva;	
+	font-size:20px; margin: 0px;
+	height:100%;
+	}
+
+.ui-widget-content
+{
+	background:#111!important;
+	border-color:navy!important;
+}        
+
+#divHeader
+{display:none;}
+
+.TabelaGrupa 
+{
+	table-layout:fixed;
+	border:0px;
+	border-spacing:2px;
+
+	width:100%;
+
+	padding-left:22px;
+	padding-right:22px;
+	margin-bottom:15px;
+}
+
+
+.NaslovContainer {
+	width:auto;
+	
+	clear:both;
+	border-bottom:none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin: 10px 22px 0px 22px;
+	padding: 0 0 0 0;
+	background: #115; 
+	color:#eee;
+	text-shadow:#ff9 0px 0px 2px;
+}
+
+.NaslovContainerB
+{
+	width:auto;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin: 10px 22px 10px 22px;
+	padding: 0 0 0 0;
+	background: #115; 
+	text-shadow:#aaa 0px 0px 2px;
+	color:#999;
+}
+
+.NaslovContainer:hover
+{
+	background: #22a;
+}
+
+.NaslovContainerB:hover
+{
+	background: #22a;
+}
+
+
+.NaslovContainer div
+{   
+	border-bottom:none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-family: Arial, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding: 6px 17px 3px 14px;
+	margin: 0 0 0 0;
+	cursor:pointer;
+}
+
+
+.NaslovContainerB div
+{
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	font-family: Arial, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding: 6px 17px 3px 14px;
+	margin: 0 0 0 0;
+	cursor:pointer;
+}
+
+
+.NaslovKelija
+{
+	border:0px;
+}
+
+/* KLASI ZA HEDER */
+.TabelaGrupa th
+{
+	border: 1px solid #11a; 
+	background: #118;
+	color: white;
+	font-weight:normal;
+	height:27px;
+	text-shadow: #c82 1px 1px 1px;
+}
+th.naslov_start  
+{
+	width:48px;
+}    
+th.naslov_sifra
+{
+	width:58px;
+}
+th.naslov_liga
+{
+	width:134px;
+}
+th.naslov_tim1
+{
+	width:150px;
+}
+th.naslov_1
+{
+	width:40px;
+}
+th.naslov_X
+{
+	width:40px;
+}
+th.naslov_2
+{
+	width:40px;
+}
+th.naslov_tim2
+{ 
+	width:150px;
+}
+th.naslov_pol
+{ 
+	width:80px;
+}
+th.naslov_rez
+{
+	width:60px;
+}
+th.naslov_status  
+{ 
+	width:110px;
+}
+
+
+table.Kosarka th.naslov_tim1,table.Kosarka th.naslov_tim2,
+table.Odbojka th.naslov_tim1,table.Odbojka th.naslov_tim2
+	{
+	width: 120px;
+	}
+	
+table.Kosarka th.naslov_1, table.Kosarka th.naslov_2  ,
+table.Odbojka th.naslov_1, table.Odbojka th.naslov_2  
+  {       
+  		width:35px;
+  }
+	
+table.Kosarka th.naslov_liga, table.Odbojka th.naslov_liga {
+        width:114px;
+		}
+
+table.Kosarka th.naslov_pol{ 
+      width:150px;
+	  }
+	  
+table.Odbojka th.naslov_pol { 
+      width:180px;
+	  }
+	  
+table.Odbojka th.naslov_status  
+{ 
+	width:100px;
+}
+
+table.Odbojka th.naslov_rez { 
+      width:40px;
+	  }
+
+
+
+table.Kosarka th.naslov_rez, table.Odbojka th.naslov_rez { 
+      width:70px;
+	  }
+	  
+table.Tenis th.naslov_pol,table.Bejzbol th.naslov_pol { 
+      width:130px;
+	  }
+
+
+/* KLASI ZA REZULTATI */
+
+.TabelaGrupa td
+	{
+        border: 1px solid #112;
+        background: #224;
+		font-family: Tahoma,Arial;
+		padding: 2px 2px 2px 2px;
+        color: #aff;
+        cursor: pointer;
+		text-overflow:ellipsis;
+		overflow:hidden;
+		white-space:nowrap;
+		}
+
+
+.TabelaGrupa tr:nth-child(odd) td
+{
+color:#ffa;
+background-color: #226;
+}
+	
+.TabelaGrupa tr:hover td
+	{
+        background: 115#;
+	}
+
+  td.liga,tr:hover td.liga
+  	{
+		text-transform:uppercase;
+		cursor: default;
+        background: #115;
+		border: 1px solid #666;
+		color: #ffffff;
+		font-weight: bold;
+		text-shadow: #666 1px 1px 1px;
+		text-transform: uppercase;		
+	}
+	
+  td.pocetok
+     {
+	 	text-align:center;
+     }
+     td.sifra
+     {
+	 	text-align:center;
+     }
+        td.Liga
+     {
+     }
+        td.tim1
+     {
+	 	text-align:center;
+		font-weight:bold;
+     }
+        td.kvota1
+     {
+ 	 	text-align:center;
+    }
+        td.kvotaX
+     {
+ 	 	text-align:center;
+     }
+        td.kvota2
+     {
+ 	 	text-align:center;
+     }
+        td.tim2
+     {
+	 	text-align:center;
+		font-weight:bold;
+     }
+        td.pol
+     {
+	 	text-align:center;
+     }
+        td.rez
+     {
+	 	text-align:center;
+		font-weight:bold;
+     }
+        td.status
+     {
+     }
+     
+     td.setovi
+     {
+     }
+     td.tretini
+     {
+     }
+     td.cetvrtini
+     {
+     }
+
+     td.DobitnaKvota, .TabelaGrupa tr:hover td.DobitnaKvota
+        {
+ 	 	font-weight:bold;
+		color:white;
+        	background: #408;
+		text-shadow:#229 1px 1px 1px;
+        }
+
+	td.rez .gol
+	{
+		color: #ffc508;
+		text-shadow: #000 1px 1px 1px;
+		position: relative;
+		top:-1px;
+	}
+
+
+/* KLASI ZA POSLEDNI PROMENI NA REZULTATI BLACK BOX */
+
+.PosledniPr 
+{
+	width:158px; 
+	font-family:Arial,Helvetica, sans-serif;
+	background-color:silver;
+	padding-top:3px;
+}
+
+.panelFudbal
+{
+     float:left; 
+}
+
+.panelOstanati
+{
+     float:right; 
+}		
+
+.RezultatiPP1, .RezultatiPP2
+{
+	background: #eee url(/css/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png) 50% top repeat-x;  
+	margin:2px 2px 2px 2px;
+	padding-left:2px;
+	padding-top:1px;
+	border-bottom:1px solid #333;
+	border-right:1px solid #333;
+	width:151px;
+	cursor:default;
+}
+
+.RezultatiPP1 span, .RezultatiPP2 span
+{
+	cursor:default;
+}
+
+div.cHT
+{	
+	background: #79b7e7 url(/css/images/ui-bg_diagonals-thick_70_79b7e7_40x40.png)  50% top repeat-x; 
+}
+
+div.c1H, div.c2H,div.cIA
+{
+	background: #d3ffcc url(/css/images/ui-bg_diagonals-thick_95_d3ffcc_40x40.png)  50% top repeat-x; 
+}
+
+div.cFT
+{
+	background: #eee url(/css/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png) 50% top repeat-x; 
+}
+
+div.cINTR
+{
+	background: #ffef8f url(/css/images/ui-bg_diagonals-thick_50_ffef8f_40x40.png) 50% top repeat-x; 
+}
+
+
+
+span.cstat 
+{
+text-transform:uppercase;
+}
+
+.RezultatiPP1 span, .RezultatiPP2 span
+{
+	line-height:12px;
+}
+
+.cstat.FT
+{
+	font-weight:bold;
+}
+
+span.cnatprevar
+{
+	text-transform:uppercase;
+	text-shadow:#eee 1px 1px 1px;
+	width:150px;
+	display:block;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+div.cnsy span.cnatprevar,div.cNoInfo span.cnatprevar
+{
+	text-shadow:black 0px 0px 2px;
+}
+
+div.cnsy, div.cNoInfo
+{
+	background: #666 url(/css/images/ui-bg_diagonals-thick_20_666666_40x40.png) 50% top repeat-x; 
+	color:white;
+	text-shadow:black 0px 0px 2px;
+}
+
+span.cnatprevar em
+{
+color:#aaa;
+font-style:normal;
+text-shadow:none;
+}
+
+span.crez
+{
+	font-weight:bold;
+}
+
+span.RezFudbalTitle, span.RezOstanatiTitle
+{
+	text-transform:uppercase;
+	font-weight:bold;
+	color:white;
+	line-height:14px;
+	margin-left:5px;
+	text-shadow:#333 1px 1px 2px;
+}
+
+.NaslovNaGrupaSport
+{
+    
+}
+
+
+.NaslovSportContainer
+{
+	width:auto;
+	float:left;
+	clear:both;
+	border:1px solid silver;
+	border-bottom:none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin: 10px 22px 0px 22px;
+	padding: 0 0 0 0;
+	background: orange url(/css/images/ui-bg_diagonals-medium_20_d34d17_40x40.png) 50% top repeat-x; 
+	color:#eee;
+	text-shadow:#ff9 0px 0px 2px;
+}
+
+.NaslovSportContainerB
+{
+	width:auto;
+	border:1px solid silver;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin: 10px 22px 10px 22px;
+	padding: 0 0 0 0;
+	background: silver url(/css/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png) 50% top repeat-x; 
+	text-shadow:#aaa 0px 0px 2px;
+	color:#999;
+}
+
+.NaslovSportContainer:hover
+{
+	background: orange url(/css/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png) 50% top repeat-x; 
+	text-shadow:#aaa 0px 0px 2px;
+	color:#999;
+}
+
+.NaslovSportContainerB:hover
+{
+	background: orange url(/css/images/ui-bg_diagonals-medium_20_d34d17_40x40.png) 50% top repeat-x; 
+	color:#eee;
+	text-shadow:#ff9 0px 0px 2px;
+}
+
+
+.NaslovSportContainer div
+{   
+	border:1px solid white;
+	border-bottom:none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-family: Arial, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding: 6px 17px 3px 14px;
+	margin: 0 0 0 0;
+	cursor:pointer;
+}
+
+
+.NaslovSportContainerB div
+{
+	border:1px solid white;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	font-family: Arial, sans-serif;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding: 6px 17px 3px 14px;
+	margin: 0 0 0 0;
+	cursor:pointer;
+}
+
+
+
+/* KLASI ZA CRVEN KARTON */
+
+td.tim1 .redcard,td.tim2 .redcard
+{
+	margin: 2px 1px 1px 1px;
+	background-color:rgba(255,0,0,0.9);
+	width:10px;
+	height:12px;
+	padding:0 0 0 0;
+	border-right: 1px solid #2779aa;
+	border-bottom: 1px solid #2779aa;
+
+	font-family: Tahoma,Arial;
+	color: #DDD;
+	font-weight:normal;
+	
+
+}
+
+td.tim1 .redcard
+{
+float: right;
+}
+
+td.tim2 .redcard
+{
+float: left;
+}
+
